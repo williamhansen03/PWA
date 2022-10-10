@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #69cdd4;
+  color: black;
+  font-size: 1em;
+  padding: 2em;
+  margin: 2em;
+}
+
+h1 {
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  padding: 0.7em;
+  margin: 0.7em;
+}
+
+.btn-start-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-start {
+  padding: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
+  margin: 2em;
+  color: white;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2em;
+  text-decoration: none;
+}
+
+.btn-start:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-start:active {
+  background: rgb(0, 0, 0);
+}
+
+.color-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color {
+  margin: 2em;
+  width: 10em;
+  height: 10em;
+  border-radius: 2em;
+  background: black;
+}
+
+.color-one {
+  background: red;
+}
+
+.color-one:hover {
+  background: darkred;
+}
+
+.color-two {
+  background: lime;
+}
+
+.color-two:hover {
+  background: limegreen;
+}
+
+.color-tree {
+  background: blue;
+}
+
+.color-tree:hover {
+  background: darkblue;
+}
+
+.color-four {
+  background: yellow;
+}
+
+.color-four:hover {
+  background: rgb(255, 225, 53);
+}
+
+/*# sourceMappingURL=style.css.map */
