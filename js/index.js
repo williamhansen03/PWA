@@ -6,6 +6,12 @@ var selecedcolor;
 var score = {"score":0};
 var score2 = 0;
 
+var timeLeft = 14;
+
+var elem = document.getElementById('some_div');
+    
+var timerId = setInterval(countdown, 1000);
+
 function init(){
     console.log("Hello world");
     if(localStorage.score != undefined){
@@ -14,6 +20,7 @@ function init(){
     
 }
 randomColor.call();
+
 
 function randomColor(){
     selecedcolor = color[Math.round((color.length -1) * Math.random())];
@@ -33,6 +40,7 @@ function rightColor(e){
     if(selecedcolor == e){
         console.log("Correct");
         score2 += 1;
+        timeLeft = 15;
         scoreDisplay.innerHTML = "Score: " + score2;
         randomColor();
         console.log(score2)
@@ -42,4 +50,15 @@ function rightColor(e){
 }
 
 
+function countdown() {
+    if (timeLeft == -1) {
+    clearTimeout(timerId);
+
+    } 
+    else {
+    elem.innerHTML = ' Time: ' + timeLeft +  ' seconds ';
+    timeLeft--;
+    
+    }
+}
 
