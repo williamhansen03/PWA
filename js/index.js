@@ -44,8 +44,9 @@ function rightColor(e){
         scoreDisplay.innerHTML = "Score: " + score2;
         randomColor();
         console.log(score2)
-        
-        
+    }
+    else{
+        document.location.href = "gameover.html";
     }
 }
 
