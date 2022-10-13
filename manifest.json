@@ -3,10 +3,10 @@
   "short_name": "PWA",
   "theme_color": "#062f55",
   "background_color": "#69cdd4",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
-  "scope": "/.",
-  "start_url": "/.index.html",
+  "scope": ".",
+  "start_url": ".index.html",
   "icons": [
     {
       "src": "images/tcstenungsund.png",
