@@ -5,7 +5,7 @@
 
 body {
   background: #69cdd4;
-  color: black;
+  color: #062F55;
   font-size: 1em;
   padding: 2em;
   margin: 2em;
@@ -17,6 +17,7 @@ h1 {
   justify-content: center;
   padding: 0.7em;
   margin: 0.7em;
+  margin-top: -0.7em;
 }
 
 .btn-start-nav {
@@ -58,36 +59,56 @@ h1 {
   background: black;
 }
 
+.bottom-border {
+  width: 100%;
+  height: 2em;
+  padding: 1em 4em 1em 4em;
+  margin-left: -4em;
+  margin-top: 4em;
+  margin-bottom: -4em;
+  background: #062F55;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+.bottom-border p {
+  color: white;
+  font-size: 2em;
+  margin-inline: 2em 2em;
+}
+
 .color-one {
-  background: red;
+  background: #C82525;
 }
 
 .color-one:hover {
-  background: darkred;
+  background: #DC2929;
 }
 
 .color-two {
-  background: lime;
+  background: #07A40B;
 }
 
 .color-two:hover {
-  background: limegreen;
+  background: #0BC40F;
 }
 
 .color-tree {
-  background: blue;
+  background: #0657E6;
 }
 
 .color-tree:hover {
-  background: darkblue;
+  background: #0961FD;
 }
 
 .color-four {
-  background: yellow;
+  background: #F3CC19;
 }
 
 .color-four:hover {
-  background: rgb(255, 225, 53);
+  background: #FFD61B;
 }
 
 /*# sourceMappingURL=style.css.map */

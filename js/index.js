@@ -1,9 +1,10 @@
 window.onload = init();
 
-const color = ["Röd","Blå","Grön","Gul"];
+const color = ["Red","Blue","Green","Gul"];
 var selecedcolor;
 
 var score = {"score":0};
+var score2 = 0;
 
 function init(){
     console.log("Hello world");
@@ -26,11 +27,16 @@ function btn(e){
 
 function rightColor(e){
     console.log(e);
+
+    const scoreDisplay = document.querySelector(".score");
+
     if(selecedcolor == e){
         console.log("Rätt");
-        score += 1;
-        console.log(score)
-        window.location.reload;
+        score2 += 1;
+        scoreDisplay.innerHTML = "Poäng: " + score2;
+        randomColor();
+        console.log(score2)
+        
         
     }
 }
