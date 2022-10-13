@@ -25,6 +25,17 @@ h1{
     justify-content: center;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gameover{
+    background: #d46969;
+    color: white;
+}
+
 .btn-start{
     padding: 1em;
     padding-left: 4em;
