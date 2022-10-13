@@ -1,6 +1,6 @@
 window.onload = init();
 
-const color = ["Red","Blue","Green","Gul"];
+const color = ["Red","Blue","Green","Yellow"];
 var selecedcolor;
 
 var score = {"score":0};
@@ -31,9 +31,9 @@ function rightColor(e){
     const scoreDisplay = document.querySelector(".score");
 
     if(selecedcolor == e){
-        console.log("Rätt");
+        console.log("Correct");
         score2 += 1;
-        scoreDisplay.innerHTML = "Poäng: " + score2;
+        scoreDisplay.innerHTML = "Score: " + score2;
         randomColor();
         console.log(score2)
         
