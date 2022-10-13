@@ -9,8 +9,18 @@
   "start_url": ".index.html",
   "icons": [
     {
-      "src": "images/tcstenungsund.png",
+      "src": "images/pwa.svg",
       "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/pwa.svg",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/pwa.svg",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
