@@ -9,17 +9,17 @@
   "start_url": ".index.html",
   "icons": [
     {
-      "src": "pwa.svg",
+      "src": "image/icon.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "pwa.svg",
+      "src": "image/icon.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "pwa.svg",
+      "src": "image/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
