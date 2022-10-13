@@ -40,14 +40,17 @@ h1{
 .btn-start:hover{
     background: rgba(0, 0, 0, 0.8);
 }
+
 .btn-start:active{
     background: rgba(0, 0, 0, 1);
 }
+
 .color-div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .color{
     margin: 2em;
     width: 10em;
