@@ -1,10 +1,16 @@
 window.onload = init();
 
-const color = ["Red","Blue","Green","Gul"];
+const color = ["Red","Blue","Green","Yellow"];
 var selecedcolor;
 
 var score = {"score":0};
 var score2 = 0;
+
+var timeLeft = 14;
+
+var elem = document.getElementById('some_div');
+    
+var timerId = setInterval(countdown, 1000);
 
 function init(){
     console.log("Hello world");
@@ -14,6 +20,7 @@ function init(){
     
 }
 randomColor.call();
+
 
 function randomColor(){
     selecedcolor = color[Math.round((color.length -1) * Math.random())];
@@ -31,15 +38,28 @@ function rightColor(e){
     const scoreDisplay = document.querySelector(".score");
 
     if(selecedcolor == e){
-        console.log("Rätt");
+        console.log("Correct");
         score2 += 1;
-        scoreDisplay.innerHTML = "Poäng: " + score2;
+        timeLeft = 15;
+        scoreDisplay.innerHTML = "Score: " + score2;
         randomColor();
         console.log(score2)
-        
-        
+    }
+    else{
+        document.location.href = "gameover.html";
     }
 }
 
 
+function countdown() {
+    if (timeLeft == -1) {
+    clearTimeout(timerId);
+
+    } 
+    else {
+    elem.innerHTML = ' Time: ' + timeLeft +  ' seconds ';
+    timeLeft--;
+    
+    }
+}
 
