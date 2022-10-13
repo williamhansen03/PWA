@@ -21,7 +21,7 @@ function randomColor(){
     colorName.innerHTML = selecedcolor;
 }
 
-function btn(e){
+function btn(e){ 
     rightColor(e);
 }
 
