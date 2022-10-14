@@ -1,7 +1,7 @@
 self.addEventListener("install", e => {
     e.waitUntil(
         caches.open("static").then(cache => {
-            return cache.addAll([".", "css/style.css", "image/icon.png"]);
+            return cache.addAll(["./", "css/style.css", "image/icon.png"]);
         })
     );
     console.log("install dcode");
@@ -9,7 +9,7 @@ self.addEventListener("install", e => {
 
 self.addEventListener("fetch", e => {
     e.respondWith(
-        caches.match(e.request).then(response =>{
+        caches.match(e.request).then(response => {
             return response || fetch(e.request);
         })
     );
