@@ -1,5 +1,3 @@
-ServiceWorkerContainer.register("https://williamhansen03.github.io");
-
 self.addEventListener("install", e => {
     e.waitUntil(
         caches.open("static").then(cache => {
