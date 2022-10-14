@@ -16,4 +16,3 @@ self.addEventListener("fetch", e => {
     console.log("Intercepting fetch request for: ${e.request.url}");
 });
 
-navigator.serviceWorker.register("https://williamhansen03.github.io");
