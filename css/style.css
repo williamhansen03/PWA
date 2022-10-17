@@ -5,7 +5,7 @@
 
 body {
   background: #69cdd4;
-  color: #062F55;
+  color: white;
   font-size: 1em;
   padding: 2em;
   margin: 2em;
@@ -18,6 +18,7 @@ h1 {
   padding: 0.7em;
   margin: 0.7em;
   margin-top: -0.7em;
+  color: white;
 }
 
 .btn-start-nav {
@@ -119,6 +120,54 @@ nav {
 
 .color-four:hover {
   background: #FFD61B;
+}
+
+.background {
+  color: hsl(324deg, 70%, 45%);
+  animation: wheelHueColor 10s infinite;
+  background-color: currentColor;
+}
+
+@supports (background-blend-mode: overlay) {
+  .background {
+    background-image: linear-gradient(45deg, white 10%, black 90%);
+    background-blend-mode: overlay;
+  }
+}
+@keyframes wheelHueColor {
+  from, to {
+    color: hsl(324deg, 70%, 45%);
+  }
+  10% {
+    color: hsl(0deg, 65%, 45%);
+  }
+  20% {
+    color: hsl(36deg, 80%, 45%);
+  }
+  30% {
+    color: hsl(72deg, 75%, 35%);
+  }
+  40% {
+    color: hsl(108deg, 65%, 35%);
+  }
+  50% {
+    color: hsl(144deg, 75%, 35%);
+  }
+  60% {
+    color: hsl(180deg, 75%, 35%);
+  }
+  70% {
+    color: hsl(216deg, 60%, 45%);
+  }
+  80% {
+    color: hsl(252deg, 65%, 50%);
+  }
+  90% {
+    color: hsl(288deg, 60%, 40%);
+  }
+}
+.background {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
