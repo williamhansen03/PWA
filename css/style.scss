@@ -1,3 +1,9 @@
+$btn-color-one: #C82525;
+$btn-color-two: #07A40B;
+$btn-color-tree: #0657E6;
+$btn-color-four: #F3CC19;
+
+
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +11,7 @@
 
 body{
     background: #69cdd4;
-    color: white;
+    color: #062F55;
     font-size: 1em;
     padding: 2em;
     margin: 2em;
@@ -18,7 +24,7 @@ h1{
     padding: 0.7em;
     margin: 0.7em;
     margin-top: -0.7em;
-    color: white;
+    color:white;
 }
 
 .btn-start-nav{
@@ -98,31 +104,29 @@ nav{
 }
 
 .color-one{
-    background: #C82525;
+    background: $btn-color-one;
 }
 .color-one:hover{
-    opacity:1.2;
+    background: scale-color($btn-color-one, $lightness: -15%);
 }
 .color-two{
-    background: #07A40B;
+    background: $btn-color-two;
 }
 .color-two:hover{
-    background: #0BC40F;
+    background: scale-color($btn-color-two, $lightness: -15%);
 }
 .color-tree{
-    background: #0657E6;
+    background: $btn-color-tree;
 }
 .color-tree:hover{
-    background: #0961FD;
+    background: scale-color($btn-color-tree, $lightness: -15%);
 }
 .color-four{
-    background: #F3CC19;
+    background: $btn-color-four;
 }
 .color-four:hover{
-    background: #FFD61B;
+    background: scale-color($btn-color-four, $lightness: -15%);
 }
-
-
 
 
   .background {

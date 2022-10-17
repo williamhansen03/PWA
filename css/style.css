@@ -5,7 +5,7 @@
 
 body {
   background: #69cdd4;
-  color: white;
+  color: #062F55;
   font-size: 1em;
   padding: 2em;
   margin: 2em;
@@ -100,7 +100,7 @@ nav {
 }
 
 .color-one:hover {
-  opacity: 1.2;
+  background: #aa1f1f;
 }
 
 .color-two {
@@ -108,7 +108,7 @@ nav {
 }
 
 .color-two:hover {
-  background: #0BC40F;
+  background: #068b09;
 }
 
 .color-tree {
@@ -116,7 +116,7 @@ nav {
 }
 
 .color-tree:hover {
-  background: #0961FD;
+  background: #054ac4;
 }
 
 .color-four {
@@ -124,7 +124,7 @@ nav {
 }
 
 .color-four:hover {
-  background: #FFD61B;
+  background: #d9b40b;
 }
 
 .background {
