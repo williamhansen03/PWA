@@ -1,7 +1,7 @@
 window.onload = init();
 
 const color = ["Red","Blue","Green","Yellow", "Purple", "Orange", "Black", "White", "Aqua", "Lime", "Brown", "Pink", "Gray"];
-const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19"];
+const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19", "#7D3C98", "F39C12", "#000000", "#FFFFFF", "#00FFFF", "#BFFF00", "#784212", "#FFC0CB", "#555555"];
 var selecedcolor;
 
 var score = {"score":0};
