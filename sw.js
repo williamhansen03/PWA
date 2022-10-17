@@ -1,7 +1,7 @@
 self.addEventListener("install", e => {
     e.waitUntil(
         caches.open("static").then(cache => {
-            return cache.addAll(["index.html", "css/style.css", "image/icon.png"]);
+            return cache.addAll(["manifest.json", "index.html", "spel.html", "gameover.html", "css/style.css", "js/script.js", "image/icon.png", "image/icon72x72.png", "image/icon144x144.png", "image/icon192x192.png"]);
         })
     );
     console.log("install dcode");
