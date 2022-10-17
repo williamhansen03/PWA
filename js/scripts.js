@@ -1,6 +1,7 @@
 window.onload = init();
 
-const color = ["Red","Blue","Green","Yellow"];
+const color = ["Red","Blue","Green","Yellow", "Purple", "Orange", "Black", "White", "Aqua", "Lime", "Brown", "Pink", "Gray"];
+const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19"];
 var selecedcolor;
 
 var score = {"score":0};
@@ -49,6 +50,7 @@ function rightColor(e){
         document.location.href = "gameover.html";
     }
 }
+
 
 
 function countdown() {
