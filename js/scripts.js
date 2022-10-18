@@ -16,8 +16,8 @@ var timerId = setInterval(countdown, 1000);
 
 var seleced;
 
-var nyColor = colorCode;
-var nameColor = color;
+var nyColor = colorCode.slice();
+var nameColor = color.slice();
 
 var randomNumber = 0;
 
@@ -27,7 +27,6 @@ function init(){
     console.log("Hello world");
     
 }
-randomColor.call();
 
 randomBtnColor.call();
 
@@ -36,14 +35,14 @@ function randomColor(){
     const colorName = document.querySelector(".color-name");
     colorName.innerHTML = selecedcolor;
     seleced = colorCode[color.indexOf(selecedcolor)];
-    console.log(seleced);
 }
 
 function randomBtnColor(){
 
+    randomColor();
+
     randomNumber = Math.round(3 * Math.random());
     nyColor.splice(nyColor.indexOf(seleced), 1);
-    console.log(randomNumber);
 
     btnColor(".color-one");
     btnColor(".color-two");
@@ -51,32 +50,8 @@ function randomBtnColor(){
     btnColor(".color-four");
 
 
-    if(randomNumber === 0){
-        let btn = document.querySelector(".color-one");
-        btn.style.background = seleced;
-        console.log(seleced);
-        console.log(btn.style.backgroundColor);
-    }
-    else if (randomNumber === 1){
-        let btn = document.querySelector(".color-two");
-        btn.style.background = seleced;
-        console.log(randomNumber);
-        console.log(seleced);
-        console.log(btn.style.backgroundColor);
-    }
-    else if (randomNumber === 2){
-        let btn = document.querySelector(".color-tree");
-        btn.style.background = seleced;
-        console.log(seleced);
-        console.log(btn.style.backgroundColor);
-    }
-    else if (randomNumber === 3){
-        let btn = document.querySelector(".color-four");
-        btn.style.background = seleced;
-        console.log(seleced);
-        console.log(btn.style.backgroundColor);
-    }
-
+    randomRightBtn(randomBtn[randomNumber]);
+    
     
 }
 
@@ -88,33 +63,63 @@ function btnColor(e){
     nameColor.splice(nameColor.indexOf(selecedcolor), 1);
 }
 
+function randomRightBtn(e){
+
+    let btn = document.querySelector(e);
+
+    btn.style.backgroundColor = seleced;
+
+}
+
 function rightColor(e){
 
     const scoreDisplay = document.querySelector(".score");
+
     let btn = document.querySelector(e);
-    var a = btn.style.backgroundColor.split("(")[1].split(")")[0];
-    a = a.split(",");
-    b = a.map(function(x){             
-        x = parseInt(x).toString(16).toUpperCase();      
-        return (x.length==1) ? "0"+x : x;  
-    });
-    b = "#" + b.join("");
+    var b = rgbToHexConverter(btn.style.backgroundColor);
+    
 
     if(b === seleced){
-        console.log("Correct");
+        rightAnimation();
+
         score2 += 1;
         timeLeft = 15;
+
         scoreDisplay.innerHTML = "Score: " + score2;
-        nyColor = colorCode;
-        randomColor();
+
+        nyColor = colorCode.slice();
+        nameColor = color.slice();
+
         randomBtnColor();
-        console.log(score2)
     }
     else{
         document.location.href = "gameover.html";
     }
 
       
+}
+
+function rightAnimation(){
+    let bodyBackgroundColor = document.body.style.backgroundColor;
+    document.body.style.backgroundColor = "#46C731";
+    delay(400).then(() => document.body.style.backgroundColor = bodyBackgroundColor);
+
+}
+
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
+  
+
+function rgbToHexConverter(e){
+    var a = e.split("(")[1].split(")")[0];
+    a = a.split(",");
+    b = a.map(function(x){             
+        x = parseInt(x).toString(16).toUpperCase();      
+        return (x.length==1) ? "0"+x : x;  
+    });
+    b = "#" + b.join("");
+    return b;
 }
 
 
