@@ -44,6 +44,7 @@ function randomBtnColor(){
     randomNumber = Math.round(3 * Math.random());
     nyColor.splice(nyColor.indexOf(seleced), 1);
     console.log(randomNumber);
+
     btnColor(".color-one");
     btnColor(".color-two");
     btnColor(".color-tree");
@@ -53,26 +54,26 @@ function randomBtnColor(){
     if(randomNumber === 0){
         let btn = document.querySelector(".color-one");
         btn.style.background = seleced;
-        console.log(typeof(seleced));
+        console.log(seleced);
         console.log(btn.style.backgroundColor);
     }
     else if (randomNumber === 1){
         let btn = document.querySelector(".color-two");
         btn.style.background = seleced;
         console.log(randomNumber);
-        console.log(typeof(seleced));
+        console.log(seleced);
         console.log(btn.style.backgroundColor);
     }
     else if (randomNumber === 2){
         let btn = document.querySelector(".color-tree");
         btn.style.background = seleced;
-        console.log(typeof(seleced));
+        console.log(seleced);
         console.log(btn.style.backgroundColor);
     }
     else if (randomNumber === 3){
         let btn = document.querySelector(".color-four");
         btn.style.background = seleced;
-        console.log(typeof(seleced));
+        console.log(seleced);
         console.log(btn.style.backgroundColor);
     }
 
