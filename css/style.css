@@ -9,6 +9,9 @@
   background-color: currentColor;
   min-height: 100vh;
 }
+.background h1 {
+  text-align: center;
+}
 
 @supports (background-blend-mode: overlay) {
   .background {
