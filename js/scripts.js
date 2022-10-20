@@ -142,9 +142,8 @@ function rgbToHexConverter(e){
 
 function countdown() {
     if (timeLeft == -1) {
-    
-    console.log("tiden är slut");
-    //clearTimeout(timerId);
+    document.location.href = "gameover.html";
+    clearTimeout(timerId);
     
 
     } 
