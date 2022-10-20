@@ -1,7 +1,7 @@
 window.onload = init();
 
-const color = ["Red","Green","Blue","Yellow", "Purple", "Orange", "Black", "White", "Aqua", "Lime", "Brown", "Pink", "Gray"];
-const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19", "#7D3C98", "#F39C12", "#000000", "#FFFFFF", "#00FFFF", "#BFFF00", "#784212", "#FFC0CB", "#555555"];
+const color = ["Red","Green","Blue","Yellow", "Purple", "Orange", "Black", "White", "Aqua", "Lime", "Brown", "Pink", "Gray", "Hot Pink"];
+const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19", "#7D3C98", "#F39C12", "#000000", "#FFFFFF", "#00FFFF", "#BFFF00", "#784212", "#FFC0CB", "#555555", "#FF69B4"];
 
 const randomBtn = [".color-one", ".color-two", ".color-tree", ".color-four"];
 
@@ -33,7 +33,7 @@ function init(){
 function colorBlindCheck(){
     if (document.getElementById('color-Blind').checked) {
         nyColor.forEach(function(colorBlind) {
-            
+
             i++;
         });
 
