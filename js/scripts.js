@@ -23,10 +23,25 @@ var randomNumber = 0;
 
 var b = "";
 
+var i = 0;
+
 function init(){
     console.log("Hello world");
     
 }
+
+function colorBlindCheck(){
+    if (document.getElementById('color-Blind').checked) {
+        nyColor.forEach(function(colorBlind) {
+            
+            i++;
+        });
+
+    } else {
+        
+    }
+}
+
 
 randomBtnColor.call();
 
@@ -90,7 +105,9 @@ function rightColor(e){
         nyColor = colorCode.slice();
         nameColor = color.slice();
 
+        colorBlindCheck();
         randomBtnColor();
+        
     }
     else{
         document.location.href = "gameover.html";
