@@ -14,6 +14,10 @@ $btn-color-four: #F3CC19;
     animation: wheelHueColor 10s infinite;
     background-color: currentColor;
     min-height: 100vh;
+
+    h1{
+        text-align: center;
+    }
 }
 
 @supports (background-blend-mode: overlay) {
