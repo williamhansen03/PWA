@@ -142,7 +142,10 @@ function rgbToHexConverter(e){
 
 function countdown() {
     if (timeLeft == -1) {
-    clearTimeout(timerId);
+    
+    console.log("tiden är slut");
+    //clearTimeout(timerId);
+    
 
     } 
     else {
