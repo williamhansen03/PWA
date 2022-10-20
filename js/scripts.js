@@ -30,18 +30,6 @@ function init(){
     
 }
 
-function colorBlindCheck(){
-    if (document.getElementById('color-Blind').checked) {
-        nyColor.forEach(function(colorBlind) {
-
-            i++;
-        });
-
-    } else {
-        
-    }
-}
-
 
 randomBtnColor.call();
 
@@ -105,7 +93,7 @@ function rightColor(e){
         nyColor = colorCode.slice();
         nameColor = color.slice();
 
-        colorBlindCheck();
+        
         randomBtnColor();
         
     }
