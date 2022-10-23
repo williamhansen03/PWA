@@ -5,18 +5,17 @@ const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19", "#7D3C98", "#F39C
 
 const randomBtn = [".color-one", ".color-two", ".color-tree", ".color-four"];
 
-let score = {"score":0};
-let score2 = 0;
+let score = 0;
 
 let timeLeft = 14;
 
 let elem = document.getElementById('some_div');
-    
+
 let timerId = setInterval(countdown, 1000);
 
 let seleced;
 
-let nyColor = colorCode.slice();
+let newColor = colorCode.slice();
 let nameColor = color.slice();
 
 let randomNumber = 0;
@@ -45,7 +44,7 @@ function randomBtnColor(){
     randomColor();
 
     randomNumber = Math.round(3 * Math.random());
-    nyColor.splice(nyColor.indexOf(seleced), 1);
+    newColor.splice(newColor.indexOf(seleced), 1);
 
     btnColor(".color-one");
     btnColor(".color-two");
@@ -59,10 +58,10 @@ function randomBtnColor(){
 }
 
 function btnColor(e){
-    selecedcolor = nyColor[Math.round((nameColor.length - 1) * Math.random())];
+    selecedcolor = newColor[Math.round((nameColor.length - 1) * Math.random())];
     btn = document.querySelector(e);
     btn.style.background = selecedcolor;
-    nyColor.splice(nyColor.indexOf(selecedcolor), 1);
+    newColor.splice(newColor.indexOf(selecedcolor), 1);
     nameColor.splice(nameColor.indexOf(selecedcolor), 1);
 }
 
@@ -85,12 +84,12 @@ function rightColor(e){
     if(b === seleced){
         rightAnimation();
 
-        score2 += 1;
+        score += 1;
         timeLeft = 15;
 
-        scoreDisplay.innerHTML = "Score: " + score2;
+        scoreDisplay.innerHTML = "Score: " + score;
 
-        nyColor = colorCode.slice();
+        newColor = colorCode.slice();
         nameColor = color.slice();
 
         
@@ -136,7 +135,7 @@ function countdown() {
 
     } 
     else {
-    elem.innerHTML = ' Time: ' + timeLeft +  ' seconds ';
+    elem.innerHTML = ' Time: ' + timeLeft +  ' Sec ';
     timeLeft--;
     
     }
