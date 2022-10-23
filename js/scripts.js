@@ -5,25 +5,25 @@ const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19", "#7D3C98", "#F39C
 
 const randomBtn = [".color-one", ".color-two", ".color-tree", ".color-four"];
 
-var score = {"score":0};
-var score2 = 0;
+let score = {"score":0};
+let score2 = 0;
 
-var timeLeft = 14;
+let timeLeft = 14;
 
-var elem = document.getElementById('some_div');
+let elem = document.getElementById('some_div');
     
-var timerId = setInterval(countdown, 1000);
+let timerId = setInterval(countdown, 1000);
 
-var seleced;
+let seleced;
 
-var nyColor = colorCode.slice();
-var nameColor = color.slice();
+let nyColor = colorCode.slice();
+let nameColor = color.slice();
 
-var randomNumber = 0;
+let randomNumber = 0;
 
-var b = "";
+let b = "";
 
-var i = 0;
+let i = 0;
 
 function init(){
     console.log("Hello world");
@@ -79,7 +79,7 @@ function rightColor(e){
     const scoreDisplay = document.querySelector(".score");
 
     let btn = document.querySelector(e);
-    var b = rgbToHexConverter(btn.style.backgroundColor);
+    let b = rgbToHexConverter(btn.style.backgroundColor);
     
 
     if(b === seleced){
@@ -117,7 +117,7 @@ function delay(time) {
   
 
 function rgbToHexConverter(e){
-    var a = e.split("(")[1].split(")")[0];
+    let a = e.split("(")[1].split(")")[0];
     a = a.split(",");
     b = a.map(function(x){             
         x = parseInt(x).toString(16).toUpperCase();      
