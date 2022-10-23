@@ -175,9 +175,9 @@ nav {
   background: #d9b40b;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .bottom-border p {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 }
 
