@@ -9,8 +9,12 @@
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    sodipodi:docname="pwa.svg"
+   inkscape:export-filename="..\Dokument\Github\pwa\image\icon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -24,92 +28,75 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4503086"
-     inkscape:cx="405.43094"
-     inkscape:cy="510.23622"
-     inkscape:window-width="1092"
-     inkscape:window-height="1030"
-     inkscape:window-x="730"
-     inkscape:window-y="77"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.12819038"
+     inkscape:cx="-846.39736"
+     inkscape:cy="752.78659"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <rect
+       x="177.89317"
+       y="246.84402"
+       width="450.93851"
+       height="438.52736"
+       id="rect1876" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient380">
+      <stop
+         style="stop-color:#2014b6;stop-opacity:1;"
+         offset="0"
+         id="stop378" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0.99363059"
+         id="stop376" />
+    </linearGradient>
+    <rect
+       x="249.60205"
+       y="368.1975"
+       width="120.66397"
+       height="228.22729"
+       id="rect970" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient380"
+       id="linearGradient382"
+       x1="166.74326"
+       y1="60.932434"
+       x2="35.75676"
+       y2="194.10811"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(4.0053941,0,0,4.0053946,-294.42237,-343.87217)" />
+  </defs>
   <g
      inkscape:label="Lager 1"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#69cdd4;fill-opacity:1;stroke:#000000;stroke-width:0.0852852"
+       style="fill:url(#linearGradient382);fill-opacity:1;stroke:none;stroke-width:0.690473"
        id="rect342"
-       width="63.423206"
-       height="63.059101"
-       x="68.649788"
-       y="95.147675"
-       rx="2.7937462"
-       ry="1.599202" />
-    <rect
-       style="fill:#c82525;fill-opacity:1;stroke:#000000;stroke-width:0.0523498"
-       id="rect111"
-       width="8.569808"
-       height="7.3584523"
-       x="83.47422"
-       y="106.73204"
-       ry="1.1372154"
-       rx="1.4802396" />
-    <rect
-       style="fill:#dc2929;fill-opacity:1;stroke:#000000;stroke-width:0.0523498"
-       id="rect4713"
-       width="8.569808"
-       height="7.3584523"
-       x="92.568932"
-       y="101.18094"
-       ry="1.1372154"
-       rx="1.4802396" />
-    <rect
-       style="fill:#07a40b;fill-opacity:1;stroke:#000000;stroke-width:0.0523498"
-       id="rect4715"
-       width="8.569808"
-       height="7.3584523"
-       x="101.77323"
-       y="104.56805"
-       ry="1.1372154"
-       rx="1.4802396" />
-    <rect
-       style="fill:#0bc40f;fill-opacity:1;stroke:#000000;stroke-width:0.0523498"
-       id="rect4717"
-       width="8.569808"
-       height="7.3584523"
-       x="105.82749"
-       y="112.65948"
-       ry="1.1372154"
-       rx="1.4802396" />
-    <rect
-       style="fill:#0657e6;fill-opacity:1;stroke:#000000;stroke-width:0.0523498"
-       id="rect4719"
-       width="8.569808"
-       height="7.3584523"
-       x="100.56791"
-       y="121.03315"
-       ry="1.1372154"
-       rx="1.4802396" />
-    <rect
-       style="fill:#0961fd;fill-opacity:1;stroke:#000000;stroke-width:0.0523498"
-       id="rect4721"
-       width="8.569808"
-       height="7.3584523"
-       x="95.527458"
-       y="129.0305"
-       ry="1.1372154"
-       rx="1.4802396" />
-    <rect
-       style="fill:#f3cc19;fill-opacity:1;stroke:#000000;stroke-width:0.0523498"
-       id="rect4723"
-       width="8.569808"
-       height="7.3584523"
-       x="94.760429"
-       y="143.70796"
-       ry="1.1372154"
-       rx="1.4802396" />
+       width="512"
+       height="512"
+       x="-130.34695"
+       y="-102.89081"
+       rx="48.858898"
+       ry="50.981636"
+       inkscape:export-filename="..\Dokument\Github\pwa\image\icon72x72.png"
+       inkscape:export-xdpi="3.5718749"
+       inkscape:export-ydpi="3.5718749" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1.0597605,0,0,1.0597606,-263.78322,-293.7567)"
+       id="text1874"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:341.333px;font-family:'Edwardian Script ITC';-inkscape-font-specification:'Edwardian Script ITC';white-space:pre;shape-inside:url(#rect1876);display:inline;fill:#ffffff"><tspan
+         x="177.89258"
+         y="535.66671"
+         id="tspan4140">C</tspan></text>
   </g>
 </svg>
