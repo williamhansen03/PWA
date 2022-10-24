@@ -18,7 +18,9 @@ $btn-color-four: #F3CC19;
     h1{
         text-align: center;
     }
+    
 }
+
 
 @supports (background-blend-mode: overlay) {
     .background {
@@ -163,11 +165,11 @@ nav{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 680px){
  
     .bottom-border{ 
         p{
-            font-size: 1.5em;
+            font-size: 1.4em;
             
         }
     }

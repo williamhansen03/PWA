@@ -5,25 +5,24 @@ const colorCode = ["#C82525", "#07A40B", "#0657E6", "#F3CC19", "#7D3C98", "#F39C
 
 const randomBtn = [".color-one", ".color-two", ".color-tree", ".color-four"];
 
-var score = {"score":0};
-var score2 = 0;
+let score = 0;
 
-var timeLeft = 14;
+let timeLeft = 14;
 
-var elem = document.getElementById('some_div');
-    
-var timerId = setInterval(countdown, 1000);
+let elem = document.getElementById('some_div');
 
-var seleced;
+let timerId = setInterval(countdown, 1000);
 
-var nyColor = colorCode.slice();
-var nameColor = color.slice();
+let seleced;
 
-var randomNumber = 0;
+let newColor = colorCode.slice();
+let nameColor = color.slice();
 
-var b = "";
+let randomNumber = 0;
 
-var i = 0;
+let b = "";
+
+let i = 0;
 
 function init(){
     console.log("Hello world");
@@ -45,7 +44,7 @@ function randomBtnColor(){
     randomColor();
 
     randomNumber = Math.round(3 * Math.random());
-    nyColor.splice(nyColor.indexOf(seleced), 1);
+    newColor.splice(newColor.indexOf(seleced), 1);
 
     btnColor(".color-one");
     btnColor(".color-two");
@@ -59,10 +58,10 @@ function randomBtnColor(){
 }
 
 function btnColor(e){
-    selecedcolor = nyColor[Math.round((nameColor.length - 1) * Math.random())];
+    selecedcolor = newColor[Math.round((nameColor.length - 1) * Math.random())];
     btn = document.querySelector(e);
     btn.style.background = selecedcolor;
-    nyColor.splice(nyColor.indexOf(selecedcolor), 1);
+    newColor.splice(newColor.indexOf(selecedcolor), 1);
     nameColor.splice(nameColor.indexOf(selecedcolor), 1);
 }
 
@@ -79,18 +78,18 @@ function rightColor(e){
     const scoreDisplay = document.querySelector(".score");
 
     let btn = document.querySelector(e);
-    var b = rgbToHexConverter(btn.style.backgroundColor);
+    let b = rgbToHexConverter(btn.style.backgroundColor);
     
 
     if(b === seleced){
         rightAnimation();
 
-        score2 += 1;
+        score += 1;
         timeLeft = 15;
 
-        scoreDisplay.innerHTML = "Score: " + score2;
+        scoreDisplay.innerHTML = "Score: " + score;
 
-        nyColor = colorCode.slice();
+        newColor = colorCode.slice();
         nameColor = color.slice();
 
         
@@ -117,7 +116,7 @@ function delay(time) {
   
 
 function rgbToHexConverter(e){
-    var a = e.split("(")[1].split(")")[0];
+    let a = e.split("(")[1].split(")")[0];
     a = a.split(",");
     b = a.map(function(x){             
         x = parseInt(x).toString(16).toUpperCase();      
@@ -136,7 +135,7 @@ function countdown() {
 
     } 
     else {
-    elem.innerHTML = ' Time: ' + timeLeft +  ' seconds ';
+    elem.innerHTML = ' Time: ' + timeLeft +  ' Sec ';
     timeLeft--;
     
     }
